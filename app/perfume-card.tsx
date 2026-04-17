@@ -1,5 +1,7 @@
-import Image from "next/image";
+"use client";
 
+import Image from "next/image";
+import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 
 type perfumeData = {
@@ -9,10 +11,11 @@ type perfumeData = {
 }
 
 export default function PerfumeCard({ image , title , brand }: perfumeData){
+    const [click, setOpen] = useState(false);
     return (
-        <div className="bg-white hover:bg-sky-200 transition-all duration-300 
+        <div onClick={() => setOpen(!click)} className={`bg-white hover:bg-sky-200 transition-all duration-300 
                         space-y-12 py-10 w-full flex flex-col justify-center items-center
-                        min-h-screen hover:-translate-y-1 hover:scale-120 ">
+                        min-h-screen hover:-translate-y-1 hover:scale-120 ${click && ("min-w-screen bg-sky-200")}`}>
             <Image 
                 src={image} 
                 alt=""
@@ -31,5 +34,8 @@ export default function PerfumeCard({ image , title , brand }: perfumeData){
                 </div>
             </div>
         </div>
+
+
     )
 }
+

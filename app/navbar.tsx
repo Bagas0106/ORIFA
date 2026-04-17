@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { MenuIcon , ArrowRight } from "lucide-react";
+import { HamburgerIcon , ArrowRight } from "lucide-react";
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
-
+    
     return (
         <>
         {/* MAIN NAVBAR */}
@@ -24,7 +24,7 @@ export default function Navbar() {
             </button>
 
             {/* Mobile button */}
-            <MenuIcon 
+            <HamburgerIcon 
                 className="block md:hidden cursor-pointer" 
                 onClick={() => setOpen(!open)}
             />

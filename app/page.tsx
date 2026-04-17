@@ -5,7 +5,7 @@ import PerfumeCard from "./perfume-card";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-hidden">
       <Navbar />
       <div className="flex flex-wrap lg:flex-nowrap items-center justify-center">
         <PerfumeCard
