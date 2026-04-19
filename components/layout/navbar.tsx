@@ -9,17 +9,17 @@ export default function Navbar() {
     return (
         <>
         {/* MAIN NAVBAR */}
-        <nav className="fixed top-0 left-0 w-full z-30 flex justify-between items-center px-6 md:px-8 py-4 text-sm bg-transparent backdrop-blur-md md:backdrop-blur-none">
+        <nav className="fixed top-0 left-0 w-full z-30 flex justify-between items-center px-4 md:px-6 py-4 text-sm bg-white/70 backdrop-blur-xl">
             <h1 className="font-bold text-xl">PLACEHOLDER</h1>
 
             {/* Desktop */}
-            <ul className="backdrop-blur-xl rounded-full p-1 hidden md:block">
-                <li className="inline-block hover:bg-gray-100 transition py-2 px-6 rounded-full">Home</li>
-                <li className="inline-block hover:bg-gray-100 transition py-2 px-6 rounded-full">About</li>
-                <li className="inline-block hover:bg-gray-100 transition py-2 px-6 rounded-full">Contact</li>
+            <ul className="rounded-full p-1 hidden md:block">
+                <li className="inline-block hover:bg-gray-100 transition py-2 px-6 rounded-full cursor-pointer">Home</li>
+                <li className="inline-block hover:bg-gray-100 transition py-2 px-6 rounded-full cursor-pointer">About</li>
+                <li className="inline-block hover:bg-gray-100 transition py-2 px-6 rounded-full cursor-pointer">Contact</li>
             </ul>
 
-            <button className="bg-black text-white hover:bg-white hover:text-black transition py-2 px-6 rounded-full shadow-lg hidden md:block">
+            <button className="bg-black text-white hover:bg-neutral-700 transition-all duration-300 cursor-pointer py-2 px-6 rounded-full shadow-lg hidden md:block">
                 View Shop
             </button>
 
